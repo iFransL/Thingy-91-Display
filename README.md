@@ -23,7 +23,7 @@ The I2C lines in the Thingy:91 are on the 1V8 rail. There are different devices 
 Time to work on the holder for the display. Initaly I designed the holder without the space for the level shifter. This looked great but it was a challenge to mount the level shifter break out board. I put the level shifter on top of the battery under the PCB. But I needed to cut out some of the plastic of the housing to bring the wires to bottom. Also the holder needed to be mounted and fixed using screws and bolts. This wasn't perfect as you need to unscrew it incase the SIM-Card needed teo be changed.
 
 ### **First Holder**
-<img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="500">
+<center><img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="500"></center>
 
 For the second prototype I made a change to the concept. I got rid of the screws and bolts by makeing it snap into the three mounting holes. To make it easier to remove it I added a mini connector for the cables connecting to the Thingy:91. Now it is easy to remove the display and more important you can now change the sim-card simply.
 <br>
