@@ -7,7 +7,7 @@ The Thingy:91 is a great tool to test or prototype your cellular applications. A
 In many of my proof of concept I used one of the many available small monochrome OLED display. As the Thingy:91 was not designed for adding your own break out board I had to be creative. Looking at the schematics I noticed that the I2C line are availble on the PCB as test points. That looked like the best starting point.
 
 [picture I2C lines from schematic]
-<img src="https://https://github.com/iFransL/Thingy-91-Display/blob/main/images/2_Schematics_I2C_Lines.jpg" width="1000">
+<img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/2_Schematics_I2C_Lines.jpg" width="1000">
 
 The I2C lines in the Thingy:91 are on the 1V8 rail. There are different devices already on the line with either a VDD of 1V8 or 3V3. The SSD1306 used in the OLED is working on 3V3 and the I2C bus accept 1V8 logic bus. When testing it on the nRF9160DK with the I/O voltage switch on 1V8 it worked perfectly. Unfortnatly when connecting the display to the thingy:91 it worked the first time after loading the application into the thingy:91. But after a power cycle the display stays off. The PMIC in the thingy didn't startup when the display  is connected. After some searching it looks like it is caused by the pull-up to VDD (3V3) on the I2C bus in the OLED module. The easiest solution is to add a bidirectional level shifter fast enough for I2C bus. The first test I did with a simple FET based level shifter break out board showed a lot of errors on the I2C bus. I got the best results with a SparkFun PCA9306 based break out board.
 
