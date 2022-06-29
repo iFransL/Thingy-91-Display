@@ -2,7 +2,8 @@
 
 The Thingy:91 is a great tool to test or prototype your cellular applications. Aldo the tool is great often I missed some application feedback when testing in the field. Sure I could connect the usb port or make use of the nRF52840 to make a bluetooth connection. But sometimes a display is just the easiest way to get some information quickly.
 
-[picture of the end solution]
+### **[UPDATE: The Thingy:91 with the display and cover]**
+<img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="1000">
 
 In many of my proof of concept I used one of the many available small monochrome OLED display. As the Thingy:91 was not designed for adding your own break out board I had to be creative. Looking at the schematics I noticed that the I2C line are availble on the PCB as test points. That looked like the best starting point. The needed 1V8, 3V3 and GND are also available as test pins.
 
@@ -19,9 +20,10 @@ The I2C lines in the Thingy:91 are on the 1V8 rail. There are different devices 
 ### **Connection diagram**
 <img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/4_ConnectionDiagram.jpg" width="1000">
 
-Time to work on a holder for the display. Initaly I designed the holder without the space for the level shifter. This looked great but it was a challenge to mount the level shifter break out board. In the first test I put the level shifter on top of the battery. But I needed to cut some of the plastic of the housing to bring the wires to bottom. Also the holder needed to be mounted using bolts and nuts. This wasn't perfect as you need to remove this for changing the sim-card.
+Time to work on a holder for the display. Initaly I designed the holder without the space for the level shifter. This looked great but it was a challenge to mount the level shifter break out board. In the first test I put the level shifter on top of the battery under the PCB. But I needed to cut some of the plastic of the housing to bring the wires to bottom. Also the holder needed to be mounted using screws and bolts. This wasn't perfect as you need to unscrew it incase the SIM-Card needed teo be changed.
 
-[picture first holder]
+### **First Holder**
+<img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="1000">
 
 For the second prototype I made a change to the concept. I got rid of the bolts and nuts by makeing 3 pins to snap into the mounting holes. And I added a mini connector for the cables connecting to the Thingy:91. Now it is easy to remove the display and more important you can change the sim-card simply.
 For creating the holder I used OpenScad. All files can be found within the github project. 
