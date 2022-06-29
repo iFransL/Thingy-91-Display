@@ -1,6 +1,6 @@
 # Adding a display to the Thingy:91
 
-The Thingy:91 is a great tool to test or prototype your cellular applications. Aldo the tool is great often I missed some application feedback when testing in the field. Sure I could connect the usb port or make use of the nRF52840 to make a bluetooth connection. Some times a display is just the easiest way to get some information quickly.
+The Thingy:91 is a great tool to test or prototype your cellular applications. Aldo the tool is great often I missed some application feedback when testing in the field. Sure I could connect the usb port or make use of the nRF52840 to make a bluetooth connection. But sometimes a display is just the easiest way to get some information quickly.
 
 [picture of the end solution]
 
