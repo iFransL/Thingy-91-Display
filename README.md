@@ -5,6 +5,9 @@ The Thingy:91 is a great tool to test or prototype your cellular applications. A
 ### **[UPDATE: The Thingy:91 with the display and cover]**
 <img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="1000">
 
+<img src="images/5_FirstTry.jpg" width="1000">
+
+
 In many of my proof of concept I used one of the many available small monochrome OLED display. As the Thingy:91 was not designed for adding your own break out board I had to be creative. Looking at the schematics I noticed that the I2C line are availble on the PCB as test points. That looked like the best starting point. The needed 1V8, 3V3 and GND are also available as test pins.
 
 ### **Schematics of Thingy:91**
@@ -22,7 +25,7 @@ The I2C lines in the Thingy:91 are on the 1V8 rail. There are different devices 
 Time to work on the holder for the display. Initaly I designed the holder without the space for the level shifter. This looked great but it was a challenge to mount the level shifter break out board. I put the level shifter on top of the battery under the PCB. But I needed to cut out some of the plastic of the housing to bring the wires to bottom. Also the holder needed to be mounted and fixed using screws and bolts. This wasn't perfect as you need to unscrew it incase the SIM-Card needed teo be changed.
 
 ### **First Holder**
-<center><img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="500"></center>
+<p style="text-align:center;"><img src="https://github.com/iFransL/Thingy-91-Display/blob/main/images/5_FirstTry.jpg" width="500"></p>
 
 For the second prototype I made a change to the concept. I got rid of the screws and bolts by makeing it snap into the three mounting holes. To make it easier to remove it I added a mini connector for the cables connecting to the Thingy:91. Now it is easy to remove the display and more important you can now change the sim-card simply.
 <br>
@@ -52,8 +55,8 @@ jsldkjflksdjf klsjf lksdjf lksdjf lksdj flksdfkodsif spof spk sdpc lsdok sodlk s
             ssd1306@3c {
                 compatible = "solomon,ssd1306fb";
                 reg = <0x3c>;
-		        label = "SSD1306";
-        		height = <32>;
+                label = "SSD1306";
+                height = <32>;
                 width  = <128>;
                 segment-offset  = <0>;
                 page-offset     = <0>;
